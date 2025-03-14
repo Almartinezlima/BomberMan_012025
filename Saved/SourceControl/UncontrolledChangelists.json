@@ -5,7 +5,9 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Lista de cambios no controlados predeterminada",
 			"files": [
-				"C:/BomberMan_012025/BomberMan_012025/Content/StarterContent/Architecture/Floor_400x400.uasset"
+				"C:/BomberMan_012025/BomberMan_012025/Content/StarterContent/Architecture/Floor_400x400.uasset",
+				"C:/BomberMan_012025/BomberMan_012025/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/3/P3/O43ETCZTFMLWWH1CJ941H2.uasset",
+				"C:/BomberMan_012025/BomberMan_012025/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/1/HF/YFYBQ72OYLHJQS0TSSXGBV.uasset"
 			]
 		}
 	]

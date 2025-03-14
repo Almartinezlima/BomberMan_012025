@@ -57,4 +57,3 @@ void ABloque::Tick(float DeltaTime)
 		SetActorLocationAndRotation(NewLocation, NewRotation);
 	}
 }
-

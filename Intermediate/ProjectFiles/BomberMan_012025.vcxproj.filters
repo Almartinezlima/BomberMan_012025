@@ -62,6 +62,9 @@
     <ClCompile Include="..\..\Source\BomberMan_012025\Private\Bloque.cpp">
       <Filter>Source\BomberMan_012025\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\BomberMan_012025\Private\Bloque_Acero.cpp">
+      <Filter>Source\BomberMan_012025\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\BomberMan_012025\Private\Luna.cpp">
       <Filter>Source\BomberMan_012025\Private</Filter>
     </ClCompile>
@@ -72,6 +75,9 @@
       <UniqueIdentifier>{B8B96ACB-8471-3B17-99BC-3EEEEEEC8864}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\BomberMan_012025\Public\Bloque.h">
+      <Filter>Source\BomberMan_012025\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BomberMan_012025\Public\Bloque_Acero.h">
       <Filter>Source\BomberMan_012025\Public</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\BomberMan_012025\Public\Luna.h">
