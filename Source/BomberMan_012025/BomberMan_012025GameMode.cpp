@@ -65,8 +65,8 @@ void ABomberMan_012025GameMode::BeginPlay()
     }
 
     // 🔹 Spawning de Bloques de Acero (Indestructibles) en el suelo, sobre el nivel del piso
-    int cantidadBloquesAcero = 5;
-    float posicionXInicial = 1500.0f; // Nueva ubicación X de inicio
+    int cantidadBloquesAcero = 10;
+    float posicionXInicial = 100.0f; // Nueva ubicación X de inicio
     float posicionY = 1000.0f;       // Nueva ubicación Y de inicio
     float espacioEntreBloques = 150.0f;
     float posicionZ = 1.0f;          // Cambié Z de 0.0f a 1.0f para evitar que quede ligeramente bajo el suelo
