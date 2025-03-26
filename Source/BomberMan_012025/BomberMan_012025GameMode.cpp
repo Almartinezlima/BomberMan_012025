@@ -32,7 +32,8 @@ void ABomberMan_012025GameMode::BeginPlay()
     int numeroBloqueConMovimiento = 0;
     for (int i = 0; i < 10; i++)
     {
-        ABloque* bloque = GetWorld()->SpawnActor<ABloque>(ABloque::StaticClass(), FVector(500.0f + i * 100, 2500.0f - i * 100, 20.0f), FRotator(0.0f, 0.0f, 0.0f));
+        // Cambié Z de 20.0f a 1.0f para que esté más cerca del suelo (ajusta según la altura del suelo)
+        ABloque* bloque = GetWorld()->SpawnActor<ABloque>(ABloque::StaticClass(), FVector(500.0f + i * 100, 2500.0f - i * 100, 1.0f), FRotator(0.0f, 0.0f, 0.0f));
 
         if (bloque && bloque->bPuedeMoverse)
         {
@@ -49,7 +50,8 @@ void ABomberMan_012025GameMode::BeginPlay()
     int numeroMuroConMovimiento = 0;
     for (int i = 0; i < 20; i++)
     {
-        AMuro* muro = GetWorld()->SpawnActor<AMuro>(AMuro::StaticClass(), FVector(800.0f + i * 100, 3000.0f - i * 100, 40.0f), FRotator(0.0f, 0.0f, 0.0f));
+        // Cambié Z de 40.0f a 1.0f para que esté más cerca del suelo (ajusta según la altura del suelo)
+        AMuro* muro = GetWorld()->SpawnActor<AMuro>(AMuro::StaticClass(), FVector(800.0f + i * 100, 3000.0f - i * 100, 1.0f), FRotator(0.0f, 0.0f, 0.0f));
 
         if (muro && muro->bPuedeMoverse)
         {
@@ -63,12 +65,11 @@ void ABomberMan_012025GameMode::BeginPlay()
     }
 
     // 🔹 Spawning de Bloques de Acero (Indestructibles) en el suelo, sobre el nivel del piso
-    // Cambié la posición Z para que estén al nivel del suelo (Z=0, ajusta según sea necesario).
     int cantidadBloquesAcero = 5;
     float posicionXInicial = 1500.0f; // Nueva ubicación X de inicio
     float posicionY = 1000.0f;       // Nueva ubicación Y de inicio
     float espacioEntreBloques = 150.0f;
-    float posicionZ = 0.0f;          // Nivel de piso en Z
+    float posicionZ = 1.0f;          // Cambié Z de 0.0f a 1.0f para evitar que quede ligeramente bajo el suelo
 
     for (int i = 0; i < cantidadBloquesAcero; i++)
     {
